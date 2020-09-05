@@ -1,0 +1,43 @@
+{% extends "main/home.html" %}
+{% load static %}
+{% block content %}
+<link href="{% static 'css/pointstyle/styles.css' %}" rel="stylesheet" type="text/css">
+
+	<link href="{% static 'css/pointstyle/responsive.css' %}" rel="stylesheet" type="text/css">
+<div class="slider display-table center-text" style="background-image: url({% static "images/category-2.jpg" %})">
+		<h1 class="title display-table-cell"><b>{{ points.name }}</b></h1>
+	</div><!-- slider -->
+
+	<section class="blog-area section">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-2 col-md-0"></div>
+				<div class="col-lg-8 col-md-12">
+					<div class="post-wrapper" align="center">
+
+						<h3 class="title"><b>Тип: </b>{{ points.interprity}}</h3>
+						<h3 class="title"><b>Цвет: </b>{{ points.color }}</h3>
+						<h3 class="title"><b>Минкульт: </b>{{ points.moinkult }}</h3>
+						<h3 class="title"><b>Менеджер: </b>{{ points.manager }}</h3>
+						<h3 class="title"><b>Уличная: </b>{{ points.street }}</h3>
+						<h3 class="title"><b>На складе: </b>{{ points.conserv }}</h3>
+                        <h3 class="title"><b>Адрес: </b>{{ points.addres }}</h3>
+
+
+
+					</div><!-- post-wrapper -->
+				</div><!-- col-sm-8 col-sm-offset-2 -->
+			</div><!-- row -->
+
+		</div><!-- container -->
+	</section>
+
+{% endblock %}
+
+
+
+
+
+
+

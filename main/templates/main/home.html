@@ -1,0 +1,50 @@
+
+<!DOCTYPE HTML>
+{% load static %}
+<html lang="en">
+<head>
+	<title>TITLE</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+
+	<!-- Font -->
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+
+	<link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css">
+
+	<link href="{% static 'css/ionicons.css' %}" rel="stylesheet" type="text/css">
+
+
+	<link href="{% static 'css/styles-category.css' %}" rel="stylesheet" type="text/css">
+
+	<link href="{% static 'css/responsive-category.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+<body >
+
+{% block content %}
+{% endblock %}
+	<!-- section -->
+
+
+
+
+
+	<!-- SCIPTS -->
+
+	<script src="{% static 'main/js/jquery-3.1.1.min.js' %}"></script>
+
+	<script src="{% static 'main/js/tether.min.js' %}"></script>
+
+	<script src="{% static 'main/js/bootstrap.js' %}"></script>
+
+	<script src="{% static 'main/js/scripts.js' %}"></script>
+
+</body>
+</html>
